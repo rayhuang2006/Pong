@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0473634296B15E200439227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0473633296B15E200439227 /* AppDelegate.swift */; };
+		C0473636296B15E200439227 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C0473635296B15E200439227 /* GameScene.sks */; };
+		C0473638296B15E200439227 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = C0473637296B15E200439227 /* Actions.sks */; };
+		C047363A296B15E200439227 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0473639296B15E200439227 /* GameScene.swift */; };
+		C047363C296B15E200439227 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047363B296B15E200439227 /* GameViewController.swift */; };
+		C047363F296B15E200439227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C047363D296B15E200439227 /* Main.storyboard */; };
+		C0473641296B15E300439227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0473640296B15E300439227 /* Assets.xcassets */; };
+		C0473644296B15E400439227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0473642296B15E400439227 /* LaunchScreen.storyboard */; };
+		C047364E296B15E400439227 /* PongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047364D296B15E400439227 /* PongTests.swift */; };
+		C0473658296B15E400439227 /* PongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0473657296B15E400439227 /* PongUITests.swift */; };
+		C047365A296B15E400439227 /* PongUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0473659296B15E400439227 /* PongUITestsLaunchTests.swift */; };
+		C0473667296B260B00439227 /* LLPIXEL3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0473666296B260B00439227 /* LLPIXEL3.ttf */; };
+		C047366A296C697700439227 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0473669296C697700439227 /* MenuVC.swift */; };
+		C0DACDB52C96D202001D9203 /* GamePlayMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0DACDB32C96D201001D9203 /* GamePlayMusic.mp3 */; };
+		C0DACDB62C96D202001D9203 /* LobbyMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0DACDB42C96D202001D9203 /* LobbyMusic.mp3 */; };
+		C0DACDBA2C96D7A7001D9203 /* PingPongSoundEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0DACDB92C96D7A7001D9203 /* PingPongSoundEffect.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C047364A296B15E400439227 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0473628296B15E200439227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C047362F296B15E200439227;
+			remoteInfo = Pong;
+		};
+		C0473654296B15E400439227 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0473628296B15E200439227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C047362F296B15E200439227;
+			remoteInfo = Pong;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C0473630296B15E200439227 /* Pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0473633296B15E200439227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0473635296B15E200439227 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		C0473637296B15E200439227 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		C0473639296B15E200439227 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C047363B296B15E200439227 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C047363E296B15E200439227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0473640296B15E300439227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0473643296B15E400439227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0473649296B15E400439227 /* PongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C047364D296B15E400439227 /* PongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongTests.swift; sourceTree = "<group>"; };
+		C0473653296B15E400439227 /* PongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0473657296B15E400439227 /* PongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongUITests.swift; sourceTree = "<group>"; };
+		C0473659296B15E400439227 /* PongUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C0473666296B260B00439227 /* LLPIXEL3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LLPIXEL3.ttf; sourceTree = "<group>"; };
+		C0473668296B26AF00439227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C0473669296C697700439227 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		C0DACDB32C96D201001D9203 /* GamePlayMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GamePlayMusic.mp3; sourceTree = "<group>"; };
+		C0DACDB42C96D202001D9203 /* LobbyMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LobbyMusic.mp3; sourceTree = "<group>"; };
+		C0DACDB92C96D7A7001D9203 /* PingPongSoundEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PingPongSoundEffect.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C047362D296B15E200439227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0473646296B15E400439227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0473650296B15E400439227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0473627296B15E200439227 = {
+			isa = PBXGroup;
+			children = (
+				C0473632296B15E200439227 /* Pong */,
+				C047364C296B15E400439227 /* PongTests */,
+				C0473656296B15E400439227 /* PongUITests */,
+				C0473631296B15E200439227 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0473631296B15E200439227 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0473630296B15E200439227 /* Pong.app */,
+				C0473649296B15E400439227 /* PongTests.xctest */,
+				C0473653296B15E400439227 /* PongUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0473632296B15E200439227 /* Pong */ = {
+			isa = PBXGroup;
+			children = (
+				C0473668296B26AF00439227 /* Info.plist */,
+				C0473633296B15E200439227 /* AppDelegate.swift */,
+				C0473639296B15E200439227 /* GameScene.swift */,
+				C047363B296B15E200439227 /* GameViewController.swift */,
+				C0473669296C697700439227 /* MenuVC.swift */,
+				C0473635296B15E200439227 /* GameScene.sks */,
+				C0473637296B15E200439227 /* Actions.sks */,
+				C0473642296B15E400439227 /* LaunchScreen.storyboard */,
+				C047363D296B15E200439227 /* Main.storyboard */,
+				C0473640296B15E300439227 /* Assets.xcassets */,
+				C0473666296B260B00439227 /* LLPIXEL3.ttf */,
+				C0DACDBB2C96E09B001D9203 /* Sound & Music */,
+			);
+			path = Pong;
+			sourceTree = "<group>";
+		};
+		C047364C296B15E400439227 /* PongTests */ = {
+			isa = PBXGroup;
+			children = (
+				C047364D296B15E400439227 /* PongTests.swift */,
+			);
+			path = PongTests;
+			sourceTree = "<group>";
+		};
+		C0473656296B15E400439227 /* PongUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0473657296B15E400439227 /* PongUITests.swift */,
+				C0473659296B15E400439227 /* PongUITestsLaunchTests.swift */,
+			);
+			path = PongUITests;
+			sourceTree = "<group>";
+		};
+		C0DACDBB2C96E09B001D9203 /* Sound & Music */ = {
+			isa = PBXGroup;
+			children = (
+				C0DACDB92C96D7A7001D9203 /* PingPongSoundEffect.mp3 */,
+				C0DACDB42C96D202001D9203 /* LobbyMusic.mp3 */,
+				C0DACDB32C96D201001D9203 /* GamePlayMusic.mp3 */,
+			);
+			path = "Sound & Music";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C047362F296B15E200439227 /* Pong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C047365D296B15E400439227 /* Build configuration list for PBXNativeTarget "Pong" */;
+			buildPhases = (
+				C047362C296B15E200439227 /* Sources */,
+				C047362D296B15E200439227 /* Frameworks */,
+				C047362E296B15E200439227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pong;
+			productName = Pong;
+			productReference = C0473630296B15E200439227 /* Pong.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0473648296B15E400439227 /* PongTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0473660296B15E400439227 /* Build configuration list for PBXNativeTarget "PongTests" */;
+			buildPhases = (
+				C0473645296B15E400439227 /* Sources */,
+				C0473646296B15E400439227 /* Frameworks */,
+				C0473647296B15E400439227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C047364B296B15E400439227 /* PBXTargetDependency */,
+			);
+			name = PongTests;
+			productName = PongTests;
+			productReference = C0473649296B15E400439227 /* PongTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0473652296B15E400439227 /* PongUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0473663296B15E400439227 /* Build configuration list for PBXNativeTarget "PongUITests" */;
+			buildPhases = (
+				C047364F296B15E400439227 /* Sources */,
+				C0473650296B15E400439227 /* Frameworks */,
+				C0473651296B15E400439227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0473655296B15E400439227 /* PBXTargetDependency */,
+			);
+			name = PongUITests;
+			productName = PongUITests;
+			productReference = C0473653296B15E400439227 /* PongUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0473628296B15E200439227 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					C047362F296B15E200439227 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					C0473648296B15E400439227 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C047362F296B15E200439227;
+					};
+					C0473652296B15E400439227 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C047362F296B15E200439227;
+					};
+				};
+			};
+			buildConfigurationList = C047362B296B15E200439227 /* Build configuration list for PBXProject "Pong" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0473627296B15E200439227;
+			productRefGroup = C0473631296B15E200439227 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C047362F296B15E200439227 /* Pong */,
+				C0473648296B15E400439227 /* PongTests */,
+				C0473652296B15E400439227 /* PongUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C047362E296B15E200439227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C047363F296B15E200439227 /* Main.storyboard in Resources */,
+				C0473667296B260B00439227 /* LLPIXEL3.ttf in Resources */,
+				C0473636296B15E200439227 /* GameScene.sks in Resources */,
+				C0DACDBA2C96D7A7001D9203 /* PingPongSoundEffect.mp3 in Resources */,
+				C0473641296B15E300439227 /* Assets.xcassets in Resources */,
+				C0DACDB52C96D202001D9203 /* GamePlayMusic.mp3 in Resources */,
+				C0DACDB62C96D202001D9203 /* LobbyMusic.mp3 in Resources */,
+				C0473644296B15E400439227 /* LaunchScreen.storyboard in Resources */,
+				C0473638296B15E200439227 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0473647296B15E400439227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0473651296B15E400439227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C047362C296B15E200439227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C047363A296B15E200439227 /* GameScene.swift in Sources */,
+				C047366A296C697700439227 /* MenuVC.swift in Sources */,
+				C047363C296B15E200439227 /* GameViewController.swift in Sources */,
+				C0473634296B15E200439227 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0473645296B15E400439227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C047364E296B15E400439227 /* PongTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C047364F296B15E400439227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C047365A296B15E400439227 /* PongUITestsLaunchTests.swift in Sources */,
+				C0473658296B15E400439227 /* PongUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C047364B296B15E400439227 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C047362F296B15E200439227 /* Pong */;
+			targetProxy = C047364A296B15E400439227 /* PBXContainerItemProxy */;
+		};
+		C0473655296B15E400439227 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C047362F296B15E200439227 /* Pong */;
+			targetProxy = C0473654296B15E400439227 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C047363D296B15E200439227 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C047363E296B15E200439227 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0473642296B15E400439227 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0473643296B15E400439227 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C047365B296B15E400439227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C047365C296B15E400439227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C047365E296B15E400439227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5MMDYA42L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pong/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pong;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = test1.Pong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C047365F296B15E400439227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5MMDYA42L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pong/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pong;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = test1.Pong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0473661296B15E400439227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5MMDYA42L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.PongTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pong.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pong";
+			};
+			name = Debug;
+		};
+		C0473662296B15E400439227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5MMDYA42L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.PongTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pong.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pong";
+			};
+			name = Release;
+		};
+		C0473664296B15E400439227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5MMDYA42L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.PongUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pong;
+			};
+			name = Debug;
+		};
+		C0473665296B15E400439227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5MMDYA42L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.PongUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pong;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C047362B296B15E200439227 /* Build configuration list for PBXProject "Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C047365B296B15E400439227 /* Debug */,
+				C047365C296B15E400439227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C047365D296B15E400439227 /* Build configuration list for PBXNativeTarget "Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C047365E296B15E400439227 /* Debug */,
+				C047365F296B15E400439227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0473660296B15E400439227 /* Build configuration list for PBXNativeTarget "PongTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0473661296B15E400439227 /* Debug */,
+				C0473662296B15E400439227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0473663296B15E400439227 /* Build configuration list for PBXNativeTarget "PongUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0473664296B15E400439227 /* Debug */,
+				C0473665296B15E400439227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0473628296B15E200439227 /* Project object */;
+}
